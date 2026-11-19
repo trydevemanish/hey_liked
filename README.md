@@ -1,4 +1,4 @@
-# Coy Discover
+# heyLiked
 
 A mobile-first profile discovery app built with Next.js, TypeScript, Tailwind
 CSS, and SQLite.
@@ -32,10 +32,17 @@ account. The profile records already refer to those paths.
 
 ## Profile API
 
-- `GET /api/feed` returns profiles the demo user has not swiped on.
-- `POST /api/swipe` accepts `{ "profileId": 2, "action": "like" }` or
+- `GET /feed` (also `GET /api/feed`) returns profiles the demo user has not
+  swiped on.
+- `POST /swipe` (also `POST /api/swipe`) accepts
+  `{ "profileId": 2, "action": "like" }` or
   `{ "profileId": 2, "action": "pass" }`. Swipes persist in SQLite, and the
   response reports a match only when both users liked each other.
+- `GET /matches` (also `GET /api/matches`) returns only mutual likes.
+
+The Matches dashboard tab lists those mutual matches; profiles are never
+identified as incoming likes in the feed or elsewhere until a mutual match
+exists.
 
 ## Database
 

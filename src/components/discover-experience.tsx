@@ -230,42 +230,6 @@ export function DiscoverExperience() {
       </header>
 
       <div className="discover-content">
-        <aside className="discover-aside">
-          <div className="privacy-card">
-            <div className="privacy-icon" aria-hidden="true">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.7"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" />
-                <path d="m9 12 2 2 4-4" />
-              </svg>
-            </div>
-            <p className="privacy-kicker">THE COY PROMISE</p>
-            <h2>Your likes stay yours.</h2>
-            <p>
-              We only celebrate a connection when the feeling is mutual.
-              Always.
-            </p>
-            <div className="privacy-decoration" aria-hidden="true">
-              ✳
-            </div>
-          </div>
-
-          <div className="discover-tip">
-            <span className="tip-label">
-              <span aria-hidden="true">✦</span> A GENTLE REMINDER
-            </span>
-            <p>
-              There&apos;s no perfect opener. A genuine hello goes a long way.
-            </p>
-          </div>
-        </aside>
-
         <section className="discovery-deck" aria-label="Discover profiles">
           <div className="deck-heading">
             <div>

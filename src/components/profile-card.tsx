@@ -26,7 +26,7 @@ export function ProfileCard({
       >
         <div className="profile-photo-topline">
           <span className="profile-photo-brand">
-            <span className="profile-brand-sparkle">✦</span> COY DISCOVER
+            <span className="profile-brand-sparkle">h♡</span> heyLiked DISCOVER
           </span>
           <span className="profile-photo-online">
             <span /> Around now

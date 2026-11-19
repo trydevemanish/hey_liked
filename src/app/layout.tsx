@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coy Discover",
+  title: "heyLiked Discover",
   description: "A swipe-based profile discovery app.",
 };
 

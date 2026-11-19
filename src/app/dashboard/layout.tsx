@@ -12,9 +12,9 @@ export default function DashboardLayout({
       <div className="dashboard-main-column">
         <header className="mobile-topbar">
           <span className="brand-mark" aria-hidden="true">
-            c
+            h♡
           </span>
-          <span className="brand-name">coy</span>
+          <span className="brand-name">heyLiked</span>
           <span className="mobile-topbar-caption">A little more connection</span>
         </header>
         {children}

@@ -1,6 +1,6 @@
 import database from "@/lib/db";
 
-export const runtime = "nodejs";
+// export const runtime = "nodejs";
 
 export function GET() {
   const { version } = database

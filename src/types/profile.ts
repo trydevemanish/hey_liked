@@ -8,4 +8,8 @@ export type Profile = {
   interests: string[];
 };
 
+export type MatchProfile = Profile & {
+  matchedAt: string;
+};
+
 export type SwipeAction = "like" | "pass";

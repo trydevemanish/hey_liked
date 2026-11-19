@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 const navigation = [
   { href: "/dashboard/home", label: "Home", icon: "home" },
   { href: "/dashboard/discover", label: "Discover", icon: "discover" },
+  { href: "/dashboard/matches", label: "Matches", icon: "matches" },
 ] as const;
 
 function NavigationLinks({ mobile = false }: { mobile?: boolean }) {
@@ -32,6 +33,8 @@ function NavigationLinks({ mobile = false }: { mobile?: boolean }) {
         >
           {item.icon === "home" ? (
             <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" />
+          ) : item.icon === "matches" ? (
+            <path d="M20.8 8.6c0 5.3-8.8 10.4-8.8 10.4S3.2 13.9 3.2 8.6A4.6 4.6 0 0 1 12 6.4a4.6 4.6 0 0 1 8.8 2.2Z" />
           ) : (
             <>
               <path d="m12 3 1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z" />
@@ -52,9 +55,9 @@ export function DashboardSidebar() {
       <aside className="dashboard-sidebar">
         <Link className="brand-lockup" href="/dashboard/discover">
           <span className="brand-mark" aria-hidden="true">
-            c
+            h♡
           </span>
-          <span className="brand-name">coy</span>
+          <span className="brand-name">heyLiked</span>
         </Link>
 
         <div className="sidebar-caption">YOUR SPACE</div>
