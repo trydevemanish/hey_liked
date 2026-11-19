@@ -30,6 +30,13 @@ Add your photos later under `public/assets/` with these filenames:
 `profile-01.jpg` through `profile-30.jpg`, plus `demo-user.jpg` for the demo
 account. The profile records already refer to those paths.
 
+## Profile API
+
+- `GET /api/feed` returns profiles the demo user has not swiped on.
+- `POST /api/swipe` accepts `{ "profileId": 2, "action": "like" }` or
+  `{ "profileId": 2, "action": "pass" }`. Swipes persist in SQLite, and the
+  response reports a match only when both users liked each other.
+
 ## Database
 
 The SQLite connection and initial schema are in `src/lib/db.ts`. Tables for

@@ -1,4 +1,5 @@
 import database from "@/lib/db";
+import { DEMO_USER_ID } from "@/lib/constants";
 
 type ProfileSeed = {
   name: string;
@@ -7,8 +8,6 @@ type ProfileSeed = {
   city: string;
   interests: string[];
 };
-
-const demoUserId = 1;
 
 const profiles: ProfileSeed[] = [
   { name: "Aanya", age: 24, shortBio: "Always looking for a new coffee spot.", city: "Mumbai", interests: ["coffee", "design", "travel"] },
@@ -71,7 +70,7 @@ export function seedProfiles(): SeedResult {
     `);
 
     insertUser.run({
-      id: demoUserId,
+      id: DEMO_USER_ID,
       name: "Demo User",
       age: 28,
       photo: "/assets/demo-user.jpg",
@@ -104,11 +103,11 @@ export function seedProfiles(): SeedResult {
     );
 
     for (const profileId of profileIds.slice(0, 4)) {
-      insertLike.run(profileId, demoUserId);
+      insertLike.run(profileId, DEMO_USER_ID);
     }
 
     for (const profileId of profileIds.slice(4, 6)) {
-      insertDislike.run(profileId, demoUserId);
+      insertDislike.run(profileId, DEMO_USER_ID);
     }
 
     return {
