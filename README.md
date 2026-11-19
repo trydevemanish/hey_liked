@@ -16,11 +16,25 @@ database module is first used.
 
 Check the app and SQLite connection at [http://localhost:3000/api/health](http://localhost:3000/api/health).
 
+## Seed demo profiles
+
+```bash
+npm run db:seed
+```
+
+This adds a demo user and 30 fictional profiles to an empty database. Four
+profiles have liked the demo user and two have passed on them. Seeding is
+transactional and skips a database that already contains users.
+
+Add your photos later under `public/assets/` with these filenames:
+`profile-01.jpg` through `profile-30.jpg`, plus `demo-user.jpg` for the demo
+account. The profile records already refer to those paths.
+
 ## Database
 
 The SQLite connection and initial schema are in `src/lib/db.ts`. Tables for
-users, likes, and dislikes are created automatically. The local database file
-is ignored by Git.
+users, likes, and dislikes are created automatically. The seed function is in
+`src/lib/seed.ts`; the local database file is ignored by Git.
 
 ## Scripts
 

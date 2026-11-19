@@ -9,8 +9,7 @@ export default function Home() {
           Discover starts here.
         </h1>
         <p className="mt-4 leading-7 text-zinc-600">
-          The project foundation is ready. Next.js, TypeScript, Tailwind CSS,
-          and SQLite are set up for the discovery experience.
+          Get Started Here.
         </p>
       </section>
     </main>
